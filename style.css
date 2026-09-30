@@ -1,0 +1,115 @@
+ * {
+   box-sizing: border-box
+ }
+
+ body {
+   margin: 0;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   background: #689399af;
+   color: #1d0000
+ }
+
+ nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 22px 10%;
+   background: #171717;
+   color: white
+ }
+
+ nav a {
+   color: rgb(255, 254, 254);
+   text-decoration: none;
+   margin-left: 20px
+ }
+
+ section {
+   padding: 70px 10%;
+   max-width: 1200px;
+   margin: auto
+ }
+
+ .profile-photo {
+   width: 220px;
+   height: 220px;
+   object-fit: cover;
+   border-radius: 20%;
+ }
+
+ h1 {
+   font-size: 60px;
+   margin: 0
+ }
+
+ h1 span,
+ .orange {
+   color: #51012f
+ }
+
+ .hero {
+   min-height: 70vh;
+   display: flex;
+   align-items: center
+ }
+
+ .hero p {
+   max-width: 550px;
+   color: #251212;
+   font-size: 18px
+ }
+
+ .btn {
+   display: inline-block;
+   background: #461552;
+   color: white;
+   padding: 13px 20px;
+   text-decoration: none;
+   font-weight: bold
+ }
+
+ .projects {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px
+ }
+
+ .card {
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+   transition: .2s
+ }
+
+ .card:hover {
+   transform: translateY(-8px)
+ }
+
+ .image {
+   border-radius: 0px
+ }
+
+ .card:nth-child(2) .image {
+  border-radius: 0px;
+   background: #dfeb5b
+ }
+
+ .card:nth-child(3) .image {
+   background: #9694c9
+ }
+
+ footer {
+   text-align: center;
+   padding: 25px;
+   background: #3a6769;
+   color: white
+ }
+
+ @media(max-width:700px) {
+   h1 {
+     font-size: 42px
+   }
+
+   .projects {
+     grid-template-columns: 1fr
+   }
+ }
